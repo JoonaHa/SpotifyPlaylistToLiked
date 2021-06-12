@@ -45,8 +45,28 @@ Make run.sh executable :
 chmod +x run.sh
 ```
 
-Run the wrapper-file:
+Theres a run.bat file for **Windows** where you can set the needed environment variables.
+
+Script expects that your python path is set.
+```bat
+@ECHO OFF
+
+SET SPOTIPY_CLIENT_ID="" 
+SET SPOTIPY_CLIENT_SECRET=""
+SET SPOTIPY_REDIRECT_URI="http://localhost:9999"
+
+python run.py "<user_id>" "<your-playlist's-name>" 1
+
+ECHO You can close the window now 
+
+PAUSE>NUL
+```
+
+Run the wrapper-file :
 ```bash
 ./runs.sh
 ```
-
+Or :
+```bat
+run.bat
+```
