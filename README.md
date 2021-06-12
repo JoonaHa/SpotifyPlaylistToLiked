@@ -45,7 +45,7 @@ Make run.sh executable :
 chmod +x run.sh
 ```
 
-Theres a run.bat file for **Windows** where you can set the needed environment variables.
+There is also a run.bat file for **Windows** where you can set the needed environment variables.
 
 Script expects that your python path is set.
 ```bat
