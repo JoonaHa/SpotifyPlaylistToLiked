@@ -10,6 +10,7 @@ The default timeout is 1 second, because the Spotify-API timestamps only support
 
 ### Requirements
 * Requirements: Python 3 and [Spotipy](https://github.com/plamere/spotipy)
+
  Clone this repository : 
 ```
 git clone https://github.com/JoonaHa/SpotifyPlaylistToLiked
@@ -25,11 +26,13 @@ python3 -m pip install spotipy
 Or use the requirements.txt file :
 ```
 python3 -m pip install -r requirements.txt
-
 ```
 Set argument and enviroment variables in run.sh:
+
 You will find ``` SPOTIPY_CLIENT_ID``` and ```SPOTIPY_CLIENT_SECRET```
-from your Spotify app's dahsboard. Remember to also add ```http://localhost:9999``` *Redirect URIs*
+from your Spotify app's dahsboard. 
+
+Remember to also add ```http://localhost:9999``` *Redirect URIs*
 ```
 #! /usr/bin/env bash
 export SPOTIPY_CLIENT_ID="" 
