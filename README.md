@@ -1,9 +1,9 @@
 # SpotifyPlaylistToLiked
-Import any of your playlists to your library or 'Liked Songs' while keeping the original order.
-The need for this arise when Spotfy changed from 'Starred tracks' to the 'Your library' and 'Liked songs' system.
-I needed to import Starred tracks to my library in the original adding order.
+Import any of your playlists to 'Your library' to the  'Liked Songs' section while keeping the original order of songs.
+The need for this arise when Spotify changed from 'Starred tracks' to the 'Your library' and 'Liked songs' system.
+I needed to import Starred tracks to Liked songs in the original adding order.
 
-This Python-projects solves it by improting the songs from a chosen playlist while adding a timeout while adding indidual songs.
+This Python-projects solves it by improting the songs from a chosen playlist while adding a timeout between songs.
 The default timeout is 1 second, because the Spotify-API timestamps only support one second precision.
 
 **You need to register for Spotify Web-Api by registering an app at [My Dashboard](https://developer.spotify.com/dashboard/applications)**
@@ -50,16 +50,16 @@ There is also a run.bat file for **Windows** where you can set the needed enviro
 Script expects that your python path is set.
 ```bat
 @ECHO OFF
-
 SET SPOTIPY_CLIENT_ID="" 
 SET SPOTIPY_CLIENT_SECRET=""
 SET SPOTIPY_REDIRECT_URI="http://localhost:9999"
 
-python run.py "<user_id>" "<your-playlist's-name>" 1
+python3 run.py "<user_id>" "<your-playlist's-name>" 1
 
-ECHO You can close the window now 
+ECHO Ready. Press any key to close the program
 
 PAUSE>NUL
+
 ```
 
 Run the wrapper-file :
