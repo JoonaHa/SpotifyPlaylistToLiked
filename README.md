@@ -9,7 +9,7 @@ The default timeout is 1 second, because the Spotify-API timestamps only support
 **You need to register for Spotify Web-Api by registering an app at [My Dashboard](https://developer.spotify.com/dashboard/applications)**
 
 ### Requirements
-* Requirements: Python 3 and [Spotipy](https://github.com/plamere/spotipy)
+* Requirements: Git, Python 3 and [Spotipy](https://github.com/plamere/spotipy)
 
  Clone this repository : 
 ```bash
