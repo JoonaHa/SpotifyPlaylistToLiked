@@ -27,27 +27,42 @@ Or use the requirements.txt file :
 ```bash
 python3 -m pip install -r requirements.txt
 ```
+--- 
+### Linux
 Set argument and enviroment variables in run.sh:
 
 You will find ``` SPOTIPY_CLIENT_ID``` and ```SPOTIPY_CLIENT_SECRET```
 from your Spotify app's dahsboard. 
 
+Script expects that your python3 path is set.
+Give your user_id number and the given playlist you want to import as arguments
 Remember to also add ```http://localhost:9999``` **Redirect URIs**
 ```bash
-export SPOTIPY_CLIENT_ID="" 
+#! /usr/bin/env bash
+export SPOTIPY_CLIENT_ID=""
 export SPOTIPY_CLIENT_SECRET=""
 export SPOTIPY_REDIRECT_URI="http://localhost:9999"
 
-python3 ./run.py "<user_id>" "<your-playlist's-name>" 1
+python3 ./run.py "<user_id>" "<your-playlist's-name>" 1 1
 ```
 Make run.sh executable : 
 ```bash
 chmod +x run.sh
 ```
+Run the wrapper-file :
+```bash
+./runs.sh
+```
+---
+### Windows
+There is  a run.bat file for **Windows** where you can set the needed environment variables.
 
-There is also a run.bat file for **Windows** where you can set the needed environment variables.
+You will find ``` SPOTIPY_CLIENT_ID``` and ```SPOTIPY_CLIENT_SECRET```
+from your Spotify app's dahsboard. 
 
-Script expects that your python path is set.
+Script expects that your python3 path is set.
+Give your user_id number and the given playlist you want to import as arguments
+Remember to also add ```http://localhost:9999``` **Redirect URIs**
 ```bat
 @ECHO OFF
 SET SPOTIPY_CLIENT_ID="" 
@@ -61,12 +76,8 @@ ECHO Ready. Press any key to close the program
 PAUSE>NUL
 
 ```
-
 Run the wrapper-file :
-```bash
-./runs.sh
-```
-Or :
+
 ```bat
 run.bat
 ```
